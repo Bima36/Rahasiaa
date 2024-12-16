@@ -1,43 +1,54 @@
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #fef8e6;
-  color: #333;
   margin: 0;
-  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #fef8e6;
+  text-align: center;
 }
-.container {
-  max-width: 600px;
-  margin: 50px auto;
+
+.hidden {
+  display: none;
+}
+
+.envelope {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  margin: 100px auto;
+  background: #ff6f61;
+  cursor: pointer;
+}
+
+.flap {
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 75px solid #ff4b39;
+}
+
+.letter {
+  position: absolute;
+  top: 75px;
+  width: 100%;
+  height: 75px;
   background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 10px;
 }
-h1 {
-  color: #ff6f61;
-}
-.button {
-  display: inline-block;
+
+button {
   margin: 10px;
   padding: 10px 20px;
   font-size: 18px;
-  color: #fff;
-  background: #ff6f61;
+  background-color: #ff6f61;
+  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  text-decoration: none;
-  transition: transform 0.2s ease, background 0.3s ease;
 }
-.button:hover {
-  background: #ff4b39;
-  transform: scale(1.1);
-}
-.message {
-  display: none;
-  margin-top: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #ff6f61;
+
+button:hover {
+  background-color: #ff4b39;
 }
