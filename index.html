@@ -3,19 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sesuatu untuk Kamu</title>
+  <title>Surat untuk Syifa</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Hai, Syif!</h1>
+  <!-- Animasi surat -->
+  <div class="envelope" id="envelope" onclick="openEnvelope()">
+    <div class="flap"></div>
+    <div class="letter">
+      <p>Tap untuk buka surat...</p>
+    </div>
+  </div>
+
+  <!-- Halaman Utama -->
+  <div class="container hidden" id="main-content">
+    <h1>Hai, Syifa!</h1>
     <p>Ada sesuatu yang pengen aku bilang nih...</p>
-    <p><strong>Aku suka sama kamu!</strong></p>
-    <p>Mau nggak kita coba lebih dekat?</p>
-    <button class="button" onclick="showMessage('yes')">Ya</button>
-    <button class="button" onclick="showMessage('friend')">Tetap Teman</button>
-    <p class="message" id="message-yes">Yay! Aku senang banget! 😊</p>
-    <p class="message" id="message-friend">Gapapa kok, aku tetap teman kamu. 😊</p>
+    <button onclick="handleChoice('yes')">Ya</button>
+    <button onclick="handleChoice('no')">Maaf aku enggak</button>
   </div>
 
   <script src="script.js"></script>
