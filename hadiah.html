@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hadiah untuk Syifa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="response-text"></h1>
+    <img src="gambar/Syifaa Donee.png" alt="Hadiah" width="300px">
+    <p>TERIMAKASIH YA SYIFA</p>
+    <p style="font-size: 14px;">sampai jumpa semester depan dan plss rahasiain ya thank you jangan canggung/takut aku okeii</p>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const response = params.get('response');
+    const responseText = document.getElementById('response-text');
+
+    if (response === 'yes') {
+      responseText.textContent = 'Beneran syiff? pasti bohong atau cuman penasaran kan...';
+    } else {
+      responseText.textContent = 'Yeayy ya pasti yang bener yang ini...';
+    }
+  </script>
+</body>
+</html>
