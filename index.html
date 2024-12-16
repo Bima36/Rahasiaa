@@ -7,39 +7,46 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  <!-- Halaman Utama -->
+  <div id="main-page" class="page">
     <h1>Hai Syifa</h1>
-    <p class="intro">Ada sesuatu yang pengen aku bilang nih...</p>
+    <p class="message">Ada sesuatu yang pengen aku bilang nih...</p>
     <p class="confession"><strong>aku suka sama kamu</strong></p>
     <img src="https://media.tenor.com/b7jAcEY5V44AAAAM/cute-mochi.gif" alt="Cute Mochi" class="gif">
     
     <div class="buttons">
-      <button onclick="showYes()">Ya</button>
-      <button onclick="showNo()">Maaf aku enggak</button>
-      <button onclick="showGift()">Hadiah</button>
+      <button onclick="showPage('yes-page')">Ya</button>
+      <button onclick="showPage('no-page')">Maaf aku enggak</button>
     </div>
   </div>
 
-  <div id="yes-response" class="hidden response">
+  <!-- Halaman Jawaban "Ya" -->
+  <div id="yes-page" class="page hidden">
     <h2 class="title-small">Beneran syiff?</h2>
-    <p>Pasti bohong atau cuman penasaran kan...<br>ya walaupun kemungkinan <strong>0,0000000001%</strong> beneran jadi ya makasih!</p>
+    <p>Pasti bohong atau cuman penasaran kan...<br>Ya walaupun kemungkinan <strong>0,0000000001%</strong> beneran jadi ya makasih!</p>
     <img src="https://media.tenor.com/3GzxAfC46NIAAAAM/rosy-cheeks-mochi-cat.gif" alt="Rosy-Cheeks Mochi Cat" class="gif">
+
+    <div class="buttons">
+      <button onclick="showPage('gift-page')">Hadiah</button>
+    </div>
   </div>
 
-  <div id="no-response" class="hidden response">
+  <!-- Halaman Hadiah -->
+  <div id="gift-page" class="page hidden">
+    <img src="Syifaa Donee.png" alt="Syifa Donee" class="syifa-gift">
+    <h2 class="big-text">TERIMAKASIH YA SYIFA</h2>
+    <p class="small-text">Sampai jumpa semester depan dan plss rahasiain ya. Thank you, jangan canggung/takut aku okeii</p>
+  </div>
+
+  <!-- Halaman Jawaban "Maaf Aku Enggak" -->
+  <div id="no-page" class="page hidden">
     <h2 class="title-small">Yeayy ya pasti yang bener yang ini</h2>
     <p>Gapapa tetep teman kok, aku yang baper padahal udah tau kalau Syifa suka mas-mas HTS, punyanya mas Jep.<br>
       Mbak Jep ya sama mas Jep wkwkwk.<br>
       Kedepannya jangan takut atau canggung atau awkward ya :) mwhehe.<br>
       Oh iya, akhir-akhir ini aku lagi bikin sesuatu buat kamu.
     </p>
-    <img src="sick-feeling.gif" alt="Sick Feeling Gif" class="gif">
-  </div>
-
-  <div id="gift-response" class="hidden response">
-    <img src="Syifaa Donee.png" alt="Syifa Donee" class="syifa-gift">
-    <h2 class="big-text">TERIMAKASIH YA SYIFA</h2>
-    <p class="small-text">Sampai jumpa semester depan dan plss rahasiain ya. Thank you, jangan canggung/takut aku okeii</p>
+    <img src="131a00d7bf3a45ec3f0bd6c654f2abe1.gif" alt="Lucu GIF" class="gif">
   </div>
 
   <script src="script.js"></script>
