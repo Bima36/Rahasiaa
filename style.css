@@ -1,61 +1,79 @@
+/* General */
 body {
+  font-family: 'Arial', sans-serif;
+  background-color: #FFFAF0;
   margin: 0;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  background-color: #fdf0e6;
+  padding: 0;
   text-align: center;
   color: #333;
 }
 
-h1 {
-  font-size: 48px;
-  color: #ff6f61;
+.container {
+  padding: 20px;
 }
 
-p {
+h1 {
+  color: #FF6F61;
+  font-size: 36px;
+}
+
+.intro, .confession {
   font-size: 20px;
 }
 
-.bold-text {
+.confession strong {
+  color: #FF6F61;
   font-size: 24px;
-  font-weight: bold;
-  color: #ff4b39;
 }
 
-.main-container {
-  margin-top: 100px;
-}
-
-.buttons {
-  margin-top: 20px;
-}
-
-button {
-  margin: 10px;
-  padding: 10px 20px;
-  font-size: 18px;
-  border: none;
-  border-radius: 10px;
+.buttons button {
+  background-color: #FFB6C1;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
   cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
 }
 
-.yes-btn {
-  background-color: #76d7c4;
+.buttons button:hover {
+  background-color: #FF6F61;
+  transition: 0.3s;
 }
 
-.no-btn {
-  background-color: #f7b7a3;
+.gif {
+  width: 150px;
+  margin: 20px 0;
 }
 
-button:hover {
-  opacity: 0.8;
+.hidden {
+  display: none;
 }
 
-img {
-  width: 80%;
-  margin-top: 20px;
-}
-
-.response-container {
+.response {
   margin-top: 50px;
+}
+
+.title-small {
+  color: #FF6F61;
+  font-size: 24px;
+}
+
+.big-text {
+  color: #FF6F61;
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.small-text {
+  color: #666;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.syifa-gift {
+  width: 250px;
+  border-radius: 12px;
+  margin: 20px 0;
 }
