@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hadiah untuk Syifa</title>
+  <title>Hadiah</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  <div class="response-container">
     <h1 id="response-text"></h1>
-    <img src="gambar/Syifaa Donee.png" alt="Hadiah" width="300px">
-    <p>TERIMAKASIH YA SYIFA</p>
-    <p style="font-size: 14px;">sampai jumpa semester depan dan plss rahasiain ya thank you jangan canggung/takut aku okeii</p>
+    <div id="hadiah-section" style="display: none;">
+      <img src="gambar/Syifaa Donee.png" alt="Hadiah">
+      <h2>TERIMAKASIH YA SYIFA</h2>
+      <p style="font-size: 14px;">sampai jumpa semester depan dan plss rahasiain ya thank you jangan canggung/takut aku okeii</p>
+    </div>
+    <button onclick="showHadiah()">Klik untuk Lihat Hadiah</button>
   </div>
 
   <script>
@@ -20,9 +23,13 @@
     const responseText = document.getElementById('response-text');
 
     if (response === 'yes') {
-      responseText.textContent = 'Beneran syiff? pasti bohong atau cuman penasaran kan...';
+      responseText.textContent = "Beneran syiff? pasti bohong atau cuman penasaran kan...ya walaupun kemungkinan 0,0000000001% beneran jadi ya makasih";
     } else {
-      responseText.textContent = 'Yeayy ya pasti yang bener yang ini...';
+      responseText.textContent = "Yeayy ya pasti yang bener yang ini, Gapapa tetep teman kok aku yang baper padahal udah tau kalau syifa punyanya/suka mas mas hts, punya nya mas jep. Mbak jep ya sama mas jep wkwkwk. kedepannya Jangan takut atau canggung atau akward ya :) mwhehe oh iya akhir akhir ini ak lagi bikin sesuatu buat kamu";
+    }
+
+    function showHadiah() {
+      document.getElementById('hadiah-section').style.display = 'block';
     }
   </script>
 </body>
