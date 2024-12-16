@@ -1,11 +1,12 @@
-function showMessage(choice) {
-  // Sembunyikan semua pesan terlebih dahulu
-  document.querySelectorAll('.message').forEach(msg => msg.style.display = 'none');
-  
-  // Tampilkan pesan berdasarkan pilihan
+function openEnvelope() {
+  document.getElementById('envelope').style.display = 'none';
+  document.getElementById('main-content').classList.remove('hidden');
+}
+
+function handleChoice(choice) {
   if (choice === 'yes') {
-    document.getElementById('message-yes').style.display = 'block';
-  } else if (choice === 'friend') {
-    document.getElementById('message-friend').style.display = 'block';
+    window.location.href = 'hadiah.html?response=yes';
+  } else {
+    window.location.href = 'hadiah.html?response=no';
   }
 }
