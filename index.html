@@ -33,7 +33,7 @@
   <!-- Halaman Jawaban "Ya" -->
   <div id="yes-page" class="page hidden">
     <h2 class="title-small">Nggak Mungkin..</h2>
-    <p>Pasti bohong lapo syiff...<br>Yaa aku tidak tau apa yang kamu pilih sih, lagipula ngapain ya ak ngasih opsi ini nggak mungkin juga.<br>
+    <p>Pasti bohong....lapo syiff...<br>Yaa aku tidak tau apa yang kamu pilih sih, lagipula ngapain ya ak ngasih opsi ini nggak mungkin juga. ya makasih walaupun tidak mungkin tpi makasih<br>
     Oh iya, akhir-akhir ini aku lagi bikin sesuatu buat kamu.</p>
     <img src="sick-feeling.gif" alt="Rosy-Cheeks Mochi Cat" class="gif">
 
@@ -46,15 +46,15 @@
   <div id="gift-page" class="page hidden">
     <img src="Syifaa Donee.png" alt="Syifa Donee" class="syifa-gift">
     <h2 class="big-text">TERIMAKASIH YA SYIFA</h2>
-    <p class="small-text">Sampai jumpa semester depan. Thank youu, jangan canggung/takut sama aku okeii 😊</p>
+    <p class="small-text">Sampai jumpa semester depan. Thank youu, jangan canggung/takut sama aku dan maaff ya kalau ada salah😊</p>
   </div>
 
   <!-- Halaman Jawaban "Maaf Aku Enggak" -->
   <div id="no-page" class="page hidden">
     <h2 class="title-small">Yaaaa sudah pasti 1000% yang ini</h2>
-    <p>Dengan begini aku udah kamu tolakkan? jadi tetep teman yaa dan tetep baik baik aja,aku yang tiba tiba baper ya cuma sehari sih padahal udah tau kalau Syifa punya/suka si mas-mas HTS, punyanya mas Jep.<br>
+    <p>Dengan begini aku udah kamu tolakkan? jadi tetep teman yaa dan tetep baik baik aja,Parahhhh bimaa padahal udah tau kalau Syifa punya/suka si mas-mas HTS, punyanya mas Jep.<br>
       Mbak Jepara ya sama mas Jepara wkwkwk.<br>
-      karena udah pasti jawabannya nggak tapi ya aku bilang supaya nggak terus kepikiran dan jadi beban di hati dan kepala<br>
+      karena udah pasti jawabannya, tapi ya supaya nggak terus kepikiran dan jadi beban di hati dan kepala<br>
       Mohon maaf kalau ganggu kamu dan bikin aneh dan dan bikin awkward dan takut tapi Kedepannya jangan takut atau awkward ya hehe Makasihh syif.<br>
       Oh iya, akhir-akhir ini aku lagi bikin sesuatu buat kamu.
     </p>
@@ -64,6 +64,22 @@
       <button onclick="showPage('gift-page')">Hadiah</button>
     </div>
   </div>
+
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(page => page.classList.add('hidden'));
+      document.getElementById(pageId).classList.remove('hidden');
+    }
+
+    function userChoice(choice) {
+      console.log('User memilih:', choice);
+      if (choice === 'yes') {
+        showPage('yes-page');
+      } else if (choice === 'no') {
+        showPage('no-page');
+      }
+    }
+  </script>
 
   <script src="script.js"></script>
 </body>
