@@ -7,8 +7,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Halaman Pembuka -->
+  <div id="intro-page" class="page">
+    <h1>Aku pengen cerita sesuatu</h1>
+    <p class="message">Akhir-akhir ini nggak tau kenapa aku kepikiran rasanya ada hal yang canggung antara aku ambk kamu ya. Tiap malem kepikiran entah gara-gara dicocok-cocokkan? Yang buat kamu risih? Maafff buat hal itu..</p>
+    <p class="message">Makanya aku mau ajak keluar mau ngomongin jujur, Syif, aku nggak pernah suka sama kamu tapi entah mengapa rasanya aku kehilangan teman ku dan itu nggak enak dan beban di pikiran. Makanya kalau gitu...</p>
+    <div class="buttons">
+      <button onclick="showPage('main-page')">Lanjut</button>
+    </div>
+  </div>
+
   <!-- Halaman Utama -->
-  <div id="main-page" class="page">
+  <div id="main-page" class="page hidden">
     <h1>Hai Syifa</h1>
     <p class="message">Ada sesuatu yang pengen aku bilang nih...</p>
     <p class="confession"><strong>aku suka sama kamu</strong></p>
@@ -53,13 +63,6 @@
     <div class="buttons">
       <button onclick="showPage('gift-page')">Hadiah</button>
     </div>
-  </div>
-
-  <!-- Halaman Hadiah -->
-  <div id="gift-page" class="page hidden">
-    <img src="Syifaa Donee.png" alt="Syifa Donee" class="syifa-gift">
-    <h2 class="big-text">TERIMAKASIH YA SYIFA</h2>
-    <p class="small-text">Sampai jumpa semester depan. Thank youu, jangan canggung/takut sama aku okeii 😊</p>
   </div>
 
   <script src="script.js"></script>
